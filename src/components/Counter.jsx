@@ -10,7 +10,6 @@ const Counter = () => {
   };
   return (
     <div>
-      <h1>Task4</h1>
       <p>{count}</p>
       <button onClick={increment}>+</button>
       <button onClick={decrement}>-</button>

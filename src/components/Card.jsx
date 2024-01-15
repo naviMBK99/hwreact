@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ children }) => {
   const cardStyle = {
     border: "2px solid grey",
-    padding: "10px",
+    padding: "30px",
     margin: "10px",
   };
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Task1 = () => {
+const Text = () => {
   const [text, setText] = useState("");
   const handleTextChange = (event) => {
     setText(event.target.value);
@@ -14,4 +14,4 @@ const Task1 = () => {
   );
 };
 
-export default Task1;
+export default Text;

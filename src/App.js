@@ -1,9 +1,9 @@
 import React from "react";
 import Boxes from "./components/Boxes";
-import Task1 from "./components/Task1";
 import Card from "./components/Card";
 import Avatar from "./components/Avatar";
 import Counter from "./components/Counter";
+import Text from "./components/Text";
 
 const App = () => {
   const stylesArr = [
@@ -13,7 +13,9 @@ const App = () => {
   ];
   return (
     <div>
+      <h1>Task4</h1>
       <Counter />
+      <hr></hr>
       <h1>Task3</h1>
       <Card>
         <Avatar
@@ -21,10 +23,11 @@ const App = () => {
           alt="Some Image"
         />
       </Card>
-
+      <hr></hr>
       <h1>Task2</h1>
       <Boxes stylesArr={stylesArr} />
-      <Task1 />
+      <hr></hr>
+      <Text />
     </div>
   );
 };
