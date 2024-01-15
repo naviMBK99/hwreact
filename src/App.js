@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Boxes from "./components/Boxes";
+import Task1 from "./components/Task1";
+import Card from "./components/Card";
+import Avatar from "./components/Avatar";
+import Counter from "./components/Counter";
 
-function App() {
+const App = () => {
+  const stylesArr = [
+    { width: "200px", height: "100px", backgroundColor: "blue" },
+    { width: "200px", height: "100px", backgroundColor: "purple" },
+    { width: "200px", height: "100px", backgroundColor: "red" },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Counter />
+      <h1>Task3</h1>
+      <Card>
+        <Avatar
+          src="https://is1-ssl.mzstatic.com/image/thumb/Iqw93OJgrXC2qojkikdLzA/1200x675mf.jpg"
+          alt="Some Image"
+        />
+      </Card>
+
+      <h1>Task2</h1>
+      <Boxes stylesArr={stylesArr} />
+      <Task1 />
     </div>
   );
-}
+};
 
 export default App;
